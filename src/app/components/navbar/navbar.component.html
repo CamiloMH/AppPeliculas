@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm ">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="['/home']"><h2>Api: <small>TheMovieDB</small></h2></a>
+      
+      
+        
+        <div class="d-flex">
+          <input #txtBuscar
+                (keyup.enter)="buscarPelicula(txtBuscar.value)" 
+                class="form-control mr-2" 
+                type="search" 
+                placeholder="Buscar película" 
+                aria-label="Search">
+          <button (click)="buscarPelicula(txtBuscar.value)" class="btn btn-success" type="submit">Buscar</button>
+        </div>
+      </div>
+   
+  </nav>
+
+  
+  
